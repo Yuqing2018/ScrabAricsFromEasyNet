@@ -1,3 +1,18 @@
+vscode + python3.7
+
+1、添加虚拟环境env
+py -m venv env  
+
+2、激活虚拟环境
+.\env\Scripts\activate
+
+3、安装必要的package
+pip install -r requirements.txt
+
+
+
+
+
 ##九歌API使用说明
 ###九歌介绍
 
