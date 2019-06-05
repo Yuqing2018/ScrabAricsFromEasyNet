@@ -74,18 +74,12 @@ def get_share(name):
 
 
 @app.route("/")
-# @app.route('/?<user>')
 def index(user=None):
-    # if(random.random()>0.3):
-        # return send_page("index.html")
-    return send_page("index.html")
+    return send_page("index_demo.html")
 
 @app.route("/demo")
-# @app.route('/?<user>')
 def index_demo():
-    # if(random.random()>0.3):
-        # return send_page("index.html")
-    return send_page("index_demo.html")
+    return send_page("index.html")
 
 @app.route('/readme')
 def red():
@@ -499,7 +493,7 @@ def add_ideal(ans, yan, jtype, tt, ideal, lk = u'九歌作'):
         draw.text((130 , 1145 + i * 60), time_time[i], (0xFF,0xFF,0xFF), font=newfont)
 
     time_str = str(time.time())
-    filename = '/share/old_new/' + time_str + '.jpg'
+    filename = '/share/new/' + time_str + '.jpg'
     im.save(server_dir+filename)
     # img = qrcode.make("https://jiuge.thunlp.cn/pic_share/"+time_str+".jpg")
     # img.save(server_dir + filename.replace(".jpg", "ew.jpg"))
