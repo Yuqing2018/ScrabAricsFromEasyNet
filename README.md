@@ -10,14 +10,21 @@ py -m venv env
 pip install -r requirements.txt
 
 4、安装mysql 本人安装的是 mysql-8.0.16
-修改mysql 配置文件：config.cfg 
-db_name : root  #默认
-db_password: 123456  # mysql root 的密码，自己设置的
-db_host : 127.0.0.1  #本地访问地址
-db_database : poem   # schema
 
-5、新建schema poem
+修改mysql 配置文件：config.cfg 
+
+db_name : root  #默认
+
+db_password: 123456  # mysql root 的密码，自己设置的
+
+db_host : 127.0.0.1  #本地访问地址
+
+db_database : poem_dev   # schema
+
+5、新建schema poem_dev
+
 6、python create.py  #添加系统运行需要的 table
+
 7、python run.py  
 
 ##九歌API使用说明
