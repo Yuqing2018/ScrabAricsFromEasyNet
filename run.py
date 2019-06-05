@@ -507,7 +507,10 @@ def add_ideal(ans, yan, jtype, tt, ideal, lk = u'九歌作'):
 
 
 if __name__ == '__main__':
-    # if app.config['DEBUG']:
     conf.read("config.cfg")
-    app.run(host="0.0.0.0", port = 5100, debug=True)
+
+    if app.config['DEBUG']:
+        app.run(host="127.0.0.1", port = 5100, debug=True)
+    else:
+        app.run(host="0.0.0.0", port = 5100, debug=False)
     # add_ideal(1, [[u"清",u"华",u"大",u"学",u"我"] for i in range(4)], [u"清",u"华",u"大"])
